@@ -1,17 +1,41 @@
-while True:
-    print('Olá, sou um validador de cpf.')
+contador = 0
+print('Olá, sou um validador de cpf.')
+while contador == 0:
     cpf = input('Digite seu cpf: ')
     lista_cpf = []
     tamanho = len(cpf)
     for digitos in cpf:
         if not tamanho == 11:
             print('Cpf inválido.')
-            break
+            encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+            if encerrador == 's' or encerrador == 'S':
+                print('Ok, vamos lá!!!')
+                print()
+                break
+            elif encerrador == 'n' or encerrador == 'N':
+                print('Ok, muitissimo obrigado e até mais.')
+                contador = 1
+                break
+            else:
+                print('Desculpe não entendi, tente novamente.')
+                print()
+                pass
 
         elif not cpf.isnumeric():
             print('Cpf inválido.')
-            break
-
+            encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+            if encerrador == 's' or encerrador == 'S':
+                print('Ok, vamos lá!!!')
+                print()
+                break
+            elif encerrador == 'n' or encerrador == 'N':
+                print('Ok, muitissimo obrigado e até mais.')
+                contador = 1
+                break
+            else:
+                print('Desculpe não entendi, tente novamente.')
+                print()
+                pass
         else:
             lista_cpf.extend(cpf)
             m1 = (int(lista_cpf[0]) * 10)
@@ -31,8 +55,19 @@ while True:
                     pass
                 else:
                     print('Cpf inválido.')
-                    print()
-                    break
+                    encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+                    if encerrador == 's' or encerrador == 'S':
+                        print('Ok, vamos lá!!!')
+                        print()
+                        break
+                    elif encerrador == 'n' or encerrador == 'N':
+                        print('Ok, muitissimo obrigado e até mais.')
+                        contador = 1
+                        break
+                    else:
+                        print('Desculpe não entendi, tente novamente.')
+                        print()
+                        pass
 
             else:
                 d1 = d1
@@ -40,8 +75,19 @@ while True:
                     pass
                 else:
                     print('Cpf inválido.')
-                    print()
-                    break
+                    encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+                    if encerrador == 's' or encerrador == 'S':
+                        print('Ok, vamos lá!!!')
+                        print()
+                        break
+                    elif encerrador == 'n' or encerrador == 'N':
+                        print('Ok, muitissimo obrigado e até mais.')
+                        contador = 1
+                        break
+                    else:
+                        print('Desculpe não entendi, tente novamente.')
+                        print()
+                        pass
 
             m_0 = (int(lista_cpf[0]) * 11)
             m_1 = (int(lista_cpf[1]) * 10)
@@ -59,19 +105,64 @@ while True:
                 d2 = 0
                 if d2 == lista_cpf[10]:
                     print('Cpf válido!')
-                    break
+                    encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+                    if encerrador == 's' or encerrador == 'S':
+                        print('Ok, vamos lá!!!')
+                        print()
+                        break
+                    elif encerrador == 'n' or encerrador == 'N':
+                        print('Ok, muitissimo obrigado e até mais.')
+                        contador = 1
+                        break
+                    else:
+                        print('Desculpe não entendi, tente novamente.')
+                        print()
+                        pass
+
                 else:
                     print('Cpf inválido.')
-                    print()
-                    break
+                    encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+                    if encerrador == 's' or encerrador == 'S':
+                        print('Ok, vamos lá!!!')
+                        print()
+                        break
+                    elif encerrador == 'n' or encerrador == 'N':
+                        print('Ok, muitissimo obrigado e até mais.')
+                        contador = 1
+                        break
+                    else:
+                        print('Desculpe não entendi, tente novamente.')
+                        print()
+                        pass
             else:
                 d2 = d2
                 if str(d2) == lista_cpf[10]:
                     print('Cpf válido!')
-                    print()
-                    break
-
+                    encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+                    if encerrador == 's' or encerrador == 'S':
+                        print('Ok, vamos lá!!!')
+                        print()
+                        break
+                    elif encerrador == 'n' or encerrador == 'N':
+                        print('Ok, muitissimo obrigado e até mais.')
+                        contador = 1
+                        break
+                    else:
+                        print('Desculpe não entendi, tente novamente.')
+                        print()
+                        pass
                 else:
                     print('Cpf inválido.')
-                    print()
-                    break
+                    encerrador = input('Deseja continuar? (S)im ou (N)ão: ')
+                    if encerrador == 's' or encerrador == 'S':
+                        print('Ok, vamos lá!!!')
+                        print()
+                        break
+                    elif encerrador == 'n' or encerrador == 'N':
+                        print('Ok, muitissimo obrigado e até mais.')
+                        contador = 1
+                        break
+                    else:
+                        print('Desculpe não entendi, tente novamente.')
+                        print()
+                        pass
